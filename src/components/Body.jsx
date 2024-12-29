@@ -1,12 +1,13 @@
-import photo from '../images/photo.jpg';
+import '../styles/Body.css'
+import WelcomeMessage from './WelcomeMessage'
+
+
 function Body()
 {
     return(
-        <header className="App-body">
-        <img src={photo} className="App-photo" alt="developer"/>
-        <p>
-          Welcome to my page!
-        </p>
+        <div className="Body">
+        <img src="/images/photo.jpg" className="Body-photo" alt="developer"/>
+        <WelcomeMessage name="Sofie" />
         <a
           className="App-link"
           href="https://disk.yandex.ru/a/DwtzhuE2mNyFpQ"
@@ -15,7 +16,7 @@ function Body()
         >
           More cat photos
         </a>
-</header>
+</div>
     )
 }
 

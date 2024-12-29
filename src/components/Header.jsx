@@ -1,9 +1,15 @@
+import '../styles/Header.css'
+import Navbar from "./Navbar";
+
 function Header() {
     return (
-        <header className='App-header'> 
+        <header className='Header'> 
+            
             <div className='header-text'>
-                This is a header
+                Purr-fect companion
             </div>
+            <br></br>
+            <Navbar />
         </header>
     );
 }

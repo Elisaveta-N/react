@@ -1,0 +1,7 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid;
+    padding: 5px;
+    font-size: calc(15px + 1vmin);
+}
