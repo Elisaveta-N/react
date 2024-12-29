@@ -1,8 +1,8 @@
 import './styles/App.css';
-import Header from './components/Header';
-import Body from './components/Body'
-import Cat from './components/Cat';
-import Cats from './components/Cats';
+import Header from './components/header/Header';
+import Body from './components/main/Body'
+import Cat from './components/cat/Cat';
+import Cats from './components/cat/Cats';
 import {Routes,Route} from 'react-router-dom';
 
 

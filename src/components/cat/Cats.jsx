@@ -1,5 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
-import { getCats } from "./CatList";
+import { getCats } from "./CatData";
 
 export default function Cats() {
   let cats = getCats();

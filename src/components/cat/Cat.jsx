@@ -1,9 +1,10 @@
-import "../styles/Cat.css"
+import "../../styles/Cat.css"
 import { useParams } from "react-router-dom";
-import { getCat } from "./CatList";
+import { getCat } from "./CatData";
 
 
 function Cat(){
+    
     let params = useParams();
     let cat = getCat(parseInt(params.id, 10));
         
