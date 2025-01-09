@@ -1,7 +1,8 @@
 import { NavLink, Outlet } from "react-router-dom";
 import { getCats } from "./CatData";
 
-export default function Cats() {
+
+function Cats() {
   let cats = getCats();
   return (
     <div>
@@ -19,3 +20,6 @@ export default function Cats() {
     </div>
   );
 }
+
+
+export default Cats;
