@@ -1,15 +1,14 @@
 import { useSelector } from 'react-redux'
-import { getCheckboxState } from '../selectors/selectors'
-
+import { selectAgreed } from '../features/counter/agreementSlice';
+import "../app/submitButton.css"
 
 const SubmitButton = () => {
-    const checkboxName = 'agree'
-    const agreed = useSelector(getCheckboxState(checkboxName))
-
+    const agreed = useSelector(selectAgreed);
 
     return (
-        <input type="button" value="Submit" disabled={!agreed}/>
+        <input type="button" value="Принять соглашение" disabled={!agreed} />
     )
 }
 
 export default SubmitButton
+

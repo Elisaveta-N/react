@@ -1,19 +1,23 @@
-import Checkbox from './Checkbox'
+import {Checkbox} from './Checkbox'
 import SubmitButton from './SubmitButton'
+import "../app/lisenseAgreement.css"
 
 
 const LicenseAgreement = () => {
     return(
         <div>
-            <h1>End User License Agreement</h1>
+            <h1>Пользовательское соглашение</h1>
         <p>
-          This End User License Agreement ("License") is an agreement between you and me. This
-          License governs your use of this application and all related software, documentation, and
-          updates and upgrades that replace or supplement the application and are not distributed
-          with a separate license (together, the "Application"). This Application is licensed to you
-          free of charge. You do not own the Application.
+        Настоящее пользовательское соглашение (далее — Соглашение) устанавливает условия, правила и 
+        ограничения использования Сайта Пользователем. 
+        <br></br>
+        Пользователь должен любить кошек и соглашаться с тем, что разработчик Сайта - молодец.
+        <br></br>
+        Если Пользователь не согласен с условиями настоящего Соглашения, то он должен немедленно покинуть Сайт, 
+        в противном случае продолжение использования Пользователем Сайта означает, что 
+        Пользователь согласен с условиями Соглашения. 
         </p>
-        <Checkbox name="agree" label="Agree" />
+        <Checkbox name="agree" label="Согласен(-на)" />
         <SubmitButton />
         </div>
     )

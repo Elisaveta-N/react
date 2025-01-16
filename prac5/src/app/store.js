@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice.js';
+import agreementReducer from '../features/counter/agreementSlice.js';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    agreed: agreementReducer,
   },
 });

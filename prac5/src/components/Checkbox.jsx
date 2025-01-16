@@ -1,23 +1,22 @@
 import React from "react";
-import { useDispatch, useSelector } from 'react-redux'
-import { getCheckboxState } from '../selectors/selectors'
-import { checkboxClick } from "../actions/actions";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  checkboxClick,
+  selectAgreed,
+} from "../features/counter/agreementSlice.js"
+import "../app/lisenseAgreement.css"
 
-const Checkbox = ({name, label}) =>
-{
-    const dispatch = useDispatch()
-    const checked = useSelector(getCheckboxState(name))
 
-    const handleClick = React.useCallback( () => {
-        dispatch(checkboxClick(name))
-    }, [dispatch, name])
+export function Checkbox({name, label}) {
+  const count = useSelector(selectAgreed);
+  const dispatch = useDispatch();
 
-    return (
-        <div>
-            <input id={name} type="checkbox" checked={checked} onChange={handleClick} />
-            <label htmlFor={name}>{label}</label>
-        </div>
-    )
+  return (
+    <div>
+        <input id={name} type="checkbox" checked={count} onChange={() => dispatch(checkboxClick())}/>
+        <label htmlFor={name}>{label}</label>
+    </div>
+  );
 }
 
-export default Checkbox
+
